@@ -29,7 +29,15 @@
             cursor: none;
         }
 
-        body {
+        /* --- EKLENDİ --- */
+        /* Tarayıcının varsayılan 'el' imlecini bağlantılarda ve düğmelerde gizle */
+        body:not(.touch-device) a,
+        body:not(.touch-device) button {
+            cursor: none;
+        }
+        /* --- EKLEME SONU --- */
+
+        body {
             background-color: #000;
             color: #fff;
             overflow: hidden;
@@ -1030,6 +1038,7 @@
 </body>
 
 </html>
+
 
 
 
